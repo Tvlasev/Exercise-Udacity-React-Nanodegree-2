@@ -99,8 +99,6 @@ class App extends Component {
 
     profiles.forEach(profile => {
       const movieID = profile.favoriteMovieID;
-      
-      console.log(movieID)
 
       if (this.usersByMovie[movieID]) {
         this.usersByMovie[movieID].push(profile.userID);
@@ -111,7 +109,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(profiles, users, movies, this.usersByMovie)
     return (
       <div>
         <header className="App-header">
